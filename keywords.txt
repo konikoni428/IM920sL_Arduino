@@ -1,0 +1,21 @@
+#######################################
+# BM64 Arduino Library Syntax Coloring
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+IM920sL	KEYWORD1
+IM920sL_data_t	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+run	KEYWORD2
+setCallback	KEYWORD2	
+sendCommand KEYWORD2
+sendCommandBool KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
