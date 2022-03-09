@@ -26,9 +26,13 @@ void IM920sL::_sendCommand(String command) {
 }
 
 String IM920sL::sendCommand(String command) {
-    _sendCommand(command);
+    _sendCommand(command);    
 
     _waitReturn();
+    if (command.equals("RPRM")) {
+        String received = _serial.readString();  // read 1sec.
+        return received;
+    }
     String received = _getLine();
     return received;
 }
